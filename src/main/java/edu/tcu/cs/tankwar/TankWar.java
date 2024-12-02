@@ -7,23 +7,17 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
+import javafx.scene.control.Button;
 import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyCombination;
 import javafx.scene.paint.Color;
-import javafx.scene.shape.Circle;
-import javafx.scene.shape.Line;
-import javafx.scene.shape.Polygon;
 import javafx.scene.shape.Rectangle;
-import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.*;
 
-public class HelloApplication extends Application {
+public class TankWar extends Application {
     PlayerTank playerTank;
     List<Tank> tanks;
     List<Wall> walls;
@@ -31,14 +25,16 @@ public class HelloApplication extends Application {
     AnimationTimer gameLoop;
     Set<String> pressedKeys;
     Set<String> activeKeys;
+
+    Scene scene;
     @Override
     public void start(Stage stage) throws IOException {
         Group root = new Group();
-        Scene scene = new Scene(root, 1000, 1000);
+        scene = new Scene(root, 1000, 1000);
 
         setupGame(root);
         setupGameLoop(root);
-        setupControls(scene);
+        setupControls();
 
         gameLoop.start();
         stage.setTitle("Hello!");
@@ -130,8 +126,11 @@ public class HelloApplication extends Application {
         gameLoop = new AnimationTimer() {
             @Override
             public void handle(long l) {
-                if(tanks.isEmpty()){
-                    win
+                if(tanks.size() == 1){
+                    win();
+                }
+                if(playerTank.isDead()){
+                    lose();
                 }
                 updateAI();
                 if(!playerTank.isDead()){
@@ -180,12 +179,11 @@ public class HelloApplication extends Application {
                         }
                     }
                 }
-
             }
         };
     }
 
-    void setupControls(Scene scene){
+    void setupControls(){
         scene.setOnKeyPressed(event -> {
             pressedKeys.add(event.getCode().toString());
             if (Objects.requireNonNull(event.getCode()) == KeyCode.SPACE) {
@@ -204,7 +202,58 @@ public class HelloApplication extends Application {
     }
 
     void win(){
+        cleanup();
+        Rectangle victoryWindow = new Rectangle(0, 0, 1000, 1000);
+        victoryWindow.setFill(Color.YELLOW);
+        Text victoryText = new Text(470, 500, "You win!");
+        victoryText.setStyle("-fx-font-size: 20px; ");
+        Button resetButton = new Button("Play again?");
+        resetButton.setLayoutX(470);
+        resetButton.setLayoutY(550);
+        resetButton.setOnAction(e -> restart());
+        Group root = new Group();
+        root.getChildren().add(victoryWindow);
+        root.getChildren().add(victoryText);
+        root.getChildren().add(resetButton);
+        scene.setRoot(root);
+    }
 
+    void lose(){
+        cleanup();
+        Rectangle victoryWindow = new Rectangle(0, 0, 1000, 1000);
+        victoryWindow.setFill(Color.RED);
+        Text victoryText = new Text(470, 500, "You lose!");
+        victoryText.setStyle("-fx-font-size: 20px; ");
+        Button resetButton = new Button("Try again?");
+        resetButton.setLayoutX(470);
+        resetButton.setLayoutY(550);
+        resetButton.setOnAction(e -> restart());
+        Group root = new Group();
+        root.getChildren().add(victoryWindow);
+        root.getChildren().add(victoryText);
+        root.getChildren().add(resetButton);
+        scene.setRoot(root);
+    }
+
+    void cleanup(){
+        tanks.clear();
+        walls.clear();
+        medkits.clear();
+        gameLoop.stop();
+        pressedKeys.clear();
+        activeKeys.clear();
+        gameLoop.stop();
+    }
+
+    void restart(){
+        Group root = new Group();
+        scene.setRoot(root);
+
+        setupGame(root);
+        setupGameLoop(root);
+        setupControls();
+
+        gameLoop.start();
     }
 
     public static void main(String[] args) {

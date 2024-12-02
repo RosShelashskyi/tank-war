@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1887d57a-7359-4a17-8eee-6f14b563941d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/tankwar/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/tankwar/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/tankwar/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/tankwar/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/HelloApplication.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/tankwar/HelloApplication.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -46,6 +42,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TankWar.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -68,6 +65,7 @@
       <recent name="C:\Users\Ros\Desktop\Code\tank-war\src\main\java\edu\tcu\cs\tankwar" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ros\Desktop\Code\tank-war\src\main\resources\edu.tcu.cs.tankwar" />
       <recent name="C:\Users\Ros\Desktop\Code\tank-war\src\main\resources\edu\tcu\cs\tankwar\img" />
     </key>
   </component>
@@ -102,7 +100,9 @@
       <workItem from="1732902581564" duration="683000" />
       <workItem from="1733014549808" duration="607000" />
       <workItem from="1733092170548" duration="3729000" />
-      <workItem from="1733169146367" duration="2032000" />
+      <workItem from="1733169146367" duration="2804000" />
+      <workItem from="1733172488618" duration="1443000" />
+      <workItem from="1733173941046" duration="673000" />
     </task>
     <servers />
   </component>

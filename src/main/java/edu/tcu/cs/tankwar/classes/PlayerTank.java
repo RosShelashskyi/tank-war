@@ -7,10 +7,12 @@ import java.util.List;
 
 public class PlayerTank extends Tank{
 
+    int maxHealth = 100;
+
     ProgressBar healthBar = new ProgressBar(1.0);
     public PlayerTank(Group group, double x, double y) {
         super(group, x, y);
-        health = 100;
+        health = maxHealth;
         healthBar.setStyle("-fx-accent: green;");
     }
 
@@ -18,7 +20,7 @@ public class PlayerTank extends Tank{
     public void takeDamage(int damage, List<Tank> tanks){
         if(health > 0){
             this.health -= damage;
-            double healthPercentage = (double) this.health / 100;
+            double healthPercentage = (double) this.health / maxHealth;
             healthBar.setProgress(healthPercentage);
             if(health <= 0){
                 destroyTank(tanks);
@@ -27,9 +29,13 @@ public class PlayerTank extends Tank{
     }
 
     public void healTank(int health){
-        this.health += health;
-        double healthPercentage = (double) this.health / 100;
-        healthBar.setProgress(healthPercentage);
+        if(health < maxHealth){
+            this.health += health;
+            if(this.health > maxHealth) this.health = maxHealth;
+            double healthPercentage = (double) this.health / maxHealth;
+            healthBar.setProgress(healthPercentage);
+        }
+
     }
 
     public ProgressBar getHealthBar() {
