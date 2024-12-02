@@ -4,7 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1887d57a-7359-4a17-8eee-6f14b563941d" name="Changes" comment="" />
+    <list default="true" id="1887d57a-7359-4a17-8eee-6f14b563941d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/MissileD.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/missileL.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/missileR.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/missileU.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/tankD.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/tankL.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/tankR.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/tankU.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/tankwar/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/tankwar/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/tankwar/classes/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/tankwar/classes/Tank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/tankwar/classes/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/tankwar/classes/Wall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/hello-view.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,20 +38,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
-      </MavenGeneralSettings>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -44,16 +66,29 @@
     "Application.HelloApplication.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Ros/Desktop/Code/tank-war/src/main/java/edu/tcu/cs/tankwar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ros\Desktop\Code\tank-war\src\main\java\edu\tcu\cs\tankwar" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ros\Desktop\Code\tank-war\src\main\resources\edu\tcu\cs\tankwar\img" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -64,10 +99,35 @@
       <updated>1730740365273</updated>
       <workItem from="1730740368534" duration="450000" />
       <workItem from="1730905930281" duration="1974000" />
+      <workItem from="1731200062802" duration="796000" />
+      <workItem from="1731601093090" duration="3224000" />
+      <workItem from="1731616445450" duration="2632000" />
+      <workItem from="1731952942101" duration="3677000" />
+      <workItem from="1732201643915" duration="818000" />
+      <workItem from="1732562898528" duration="3069000" />
+      <workItem from="1732571218159" duration="5408000" />
+      <workItem from="1732590936687" duration="662000" />
+      <workItem from="1732632902719" duration="6145000" />
+      <workItem from="1732727793343" duration="4073000" />
+      <workItem from="1732732204415" duration="5451000" />
+      <workItem from="1732758498445" duration="775000" />
+      <workItem from="1732806425067" duration="7377000" />
+      <workItem from="1732824456683" duration="1914000" />
+      <workItem from="1732826569714" duration="1262000" />
+      <workItem from="1732893450337" duration="1215000" />
+      <workItem from="1732896838980" duration="1425000" />
+      <workItem from="1732899203558" duration="2534000" />
+      <workItem from="1732902581564" duration="683000" />
+      <workItem from="1733014549808" duration="607000" />
+      <workItem from="1733092170548" duration="3729000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
