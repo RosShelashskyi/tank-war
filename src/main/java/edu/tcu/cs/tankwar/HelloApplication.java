@@ -24,14 +24,40 @@ import java.io.IOException;
 import java.util.*;
 
 public class HelloApplication extends Application {
+    PlayerTank playerTank;
+    List<Tank> tanks;
+    List<Wall> walls;
+    List<Medkit> medkits;
+    AnimationTimer gameLoop;
+    Set<String> pressedKeys;
+    Set<String> activeKeys;
     @Override
     public void start(Stage stage) throws IOException {
         Group root = new Group();
         Scene scene = new Scene(root, 1000, 1000);
 
-        List<Tank> tanks = new ArrayList<>();
+        setupGame(root);
+        setupGameLoop(root);
+        setupControls(scene);
 
-        PlayerTank playerTank = new PlayerTank(root, 500, 100);
+        gameLoop.start();
+        stage.setTitle("Hello!");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void updateAI(){
+        for(Tank tank : tanks){
+            if(tank.getClass().equals(AITank.class) && !tank.isDead()){
+                ((AITank) tank).updateAI(playerTank, walls, tanks);
+            }
+        }
+    }
+
+    public void setupGame(Group root){
+        tanks = new ArrayList<>();
+
+        playerTank = new PlayerTank(root, 500, 100);
         Tank enemy1 = new AITank(root, 300, 800);
         Tank enemy2 = new AITank(root, 500, 800);
         Tank enemy3 = new AITank(root, 700, 800);
@@ -49,7 +75,7 @@ public class HelloApplication extends Application {
             root.getChildren().add(tank.getImageView());
         }
 
-        final List<Wall> walls = new ArrayList<>();
+        walls = new ArrayList<>();
 
         Wall northBound = new Wall(root, 0, 0, 1, 1000);
         Wall eastBound = new Wall(root, 999, 0, 1000, 1);
@@ -80,7 +106,7 @@ public class HelloApplication extends Application {
 
         root.getChildren().add(playerTank.getHealthBar());
 
-        final List<Medkit> medkits = new ArrayList<>();
+        medkits = new ArrayList<>();
 
         Medkit medkit1 = new Medkit(150, 150);
         Medkit medkit2 = new Medkit(850, 150);
@@ -96,13 +122,18 @@ public class HelloApplication extends Application {
             root.getChildren().add(medkit.getImageView());
         }
 
-        final Set<String> pressedKeys = new HashSet<>();
-        final Set<String> activeKeys = new HashSet<>();
+        pressedKeys = new HashSet<>();
+        activeKeys = new HashSet<>();
+    }
 
-        AnimationTimer gameLoop = new AnimationTimer() {
+    public void setupGameLoop(Group root){
+        gameLoop = new AnimationTimer() {
             @Override
             public void handle(long l) {
-                updateAI(tanks, walls, playerTank);
+                if(tanks.isEmpty()){
+                    win
+                }
+                updateAI();
                 if(!playerTank.isDead()){
                     for(Medkit medkit : medkits){
                         if (playerTank.intersects(medkit.getBoundsInParent())){
@@ -152,7 +183,9 @@ public class HelloApplication extends Application {
 
             }
         };
+    }
 
+    void setupControls(Scene scene){
         scene.setOnKeyPressed(event -> {
             pressedKeys.add(event.getCode().toString());
             if (Objects.requireNonNull(event.getCode()) == KeyCode.SPACE) {
@@ -168,18 +201,10 @@ public class HelloApplication extends Application {
             pressedKeys.remove(event.getCode().toString());
             activeKeys.remove(event.getCode().toString());
         });
-        gameLoop.start();
-        stage.setTitle("Hello!");
-        stage.setScene(scene);
-        stage.show();
     }
 
-    public void updateAI(List<Tank> tanks, List<Wall> walls, Tank playerTank){
-        for(Tank tank : tanks){
-            if(tank.getClass().equals(AITank.class) && !tank.isDead()){
-                ((AITank) tank).updateAI(playerTank, walls, tanks);
-            }
-        }
+    void win(){
+
     }
 
     public static void main(String[] args) {

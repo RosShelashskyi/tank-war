@@ -5,30 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1887d57a-7359-4a17-8eee-6f14b563941d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/MissileD.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/missileL.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/missileR.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/missileU.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/tankD.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/tankL.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/tankR.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/img/tankU.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/tankwar/Controller.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/tankwar/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/tankwar/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/tankwar/classes/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/tankwar/classes/Tank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/tankwar/classes/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/tankwar/classes/Wall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/tankwar/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/HelloApplication.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/tcu/cs/tankwar/hello-view.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,26 +43,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HelloApplication.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Ros/Desktop/Code/tank-war/src/main/java/edu/tcu/cs/tankwar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ros/Desktop/Code/tank-war/src/main/java/edu/tcu/cs/tankwar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Ros\Desktop\Code\tank-war\src\main\java\edu\tcu\cs\tankwar" />
@@ -120,11 +102,23 @@
       <workItem from="1732902581564" duration="683000" />
       <workItem from="1733014549808" duration="607000" />
       <workItem from="1733092170548" duration="3729000" />
+      <workItem from="1733169146367" duration="2032000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
