@@ -8,7 +8,7 @@ public class Medkit {
 
     ImageView imageView;
 
-    Image image = new Image("C:\\Users\\Ros\\Desktop\\Code\\tank-war\\src\\main\\resources\\edu\\tcu\\cs\\tankwar\\img\\Medkit.gif");
+    Image image = new Image(getClass().getResource("/edu/tcu/cs/tankwar/img/Medkit.gif").toExternalForm());
 
     int health = 10;
 

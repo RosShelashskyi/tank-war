@@ -21,22 +21,22 @@ public class Tank extends GameObject{
     List<Image> animationImages = new ArrayList<>();
 
     public Tank(Group group, double x, double y) {
-        upImage = new Image("C:\\Users\\Ros\\Desktop\\Code\\tank-war\\src\\main\\resources\\edu\\tcu\\cs\\tankwar\\img\\tankU.gif");
-        downImage = new Image("C:\\Users\\Ros\\Desktop\\Code\\tank-war\\src\\main\\resources\\edu\\tcu\\cs\\tankwar\\img\\tankD.gif");
-        leftImage = new Image("C:\\Users\\Ros\\Desktop\\Code\\tank-war\\src\\main\\resources\\edu\\tcu\\cs\\tankwar\\img\\tankL.gif");
-        rightImage = new Image("C:\\Users\\Ros\\Desktop\\Code\\tank-war\\src\\main\\resources\\edu\\tcu\\cs\\tankwar\\img\\tankR.gif");
+        upImage = new Image(getClass().getResource("/edu/tcu/cs/tankwar/img/tankU.gif").toExternalForm());
+        downImage = new Image(getClass().getResource("/edu/tcu/cs/tankwar/img/tankD.gif").toExternalForm());
+        leftImage = new Image(getClass().getResource("/edu/tcu/cs/tankwar/img/tankL.gif").toExternalForm());
+        rightImage = new Image(getClass().getResource("/edu/tcu/cs/tankwar/img/tankR.gif").toExternalForm());
 
-        animationImages.add(new Image("C:\\Users\\Ros\\Desktop\\Code\\tank-war\\src\\main\\resources\\edu\\tcu\\cs\\tankwar\\img\\0.gif"));
-        animationImages.add(new Image("C:\\Users\\Ros\\Desktop\\Code\\tank-war\\src\\main\\resources\\edu\\tcu\\cs\\tankwar\\img\\1.gif"));
-        animationImages.add(new Image("C:\\Users\\Ros\\Desktop\\Code\\tank-war\\src\\main\\resources\\edu\\tcu\\cs\\tankwar\\img\\2.gif"));
-        animationImages.add(new Image("C:\\Users\\Ros\\Desktop\\Code\\tank-war\\src\\main\\resources\\edu\\tcu\\cs\\tankwar\\img\\3.gif"));
-        animationImages.add(new Image("C:\\Users\\Ros\\Desktop\\Code\\tank-war\\src\\main\\resources\\edu\\tcu\\cs\\tankwar\\img\\4.gif"));
-        animationImages.add(new Image("C:\\Users\\Ros\\Desktop\\Code\\tank-war\\src\\main\\resources\\edu\\tcu\\cs\\tankwar\\img\\5.gif"));
-        animationImages.add(new Image("C:\\Users\\Ros\\Desktop\\Code\\tank-war\\src\\main\\resources\\edu\\tcu\\cs\\tankwar\\img\\6.gif"));
-        animationImages.add(new Image("C:\\Users\\Ros\\Desktop\\Code\\tank-war\\src\\main\\resources\\edu\\tcu\\cs\\tankwar\\img\\7.gif"));
-        animationImages.add(new Image("C:\\Users\\Ros\\Desktop\\Code\\tank-war\\src\\main\\resources\\edu\\tcu\\cs\\tankwar\\img\\8.gif"));
-        animationImages.add(new Image("C:\\Users\\Ros\\Desktop\\Code\\tank-war\\src\\main\\resources\\edu\\tcu\\cs\\tankwar\\img\\9.gif"));
-        animationImages.add(new Image("C:\\Users\\Ros\\Desktop\\Code\\tank-war\\src\\main\\resources\\edu\\tcu\\cs\\tankwar\\img\\10.gif"));
+        animationImages.add(new Image(getClass().getResource("/edu/tcu/cs/tankwar/img/0.gif").toExternalForm()));
+        animationImages.add(new Image(getClass().getResource("/edu/tcu/cs/tankwar/img/1.gif").toExternalForm()));
+        animationImages.add(new Image(getClass().getResource("/edu/tcu/cs/tankwar/img/2.gif").toExternalForm()));
+        animationImages.add(new Image(getClass().getResource("/edu/tcu/cs/tankwar/img/3.gif").toExternalForm()));
+        animationImages.add(new Image(getClass().getResource("/edu/tcu/cs/tankwar/img/4.gif").toExternalForm()));
+        animationImages.add(new Image(getClass().getResource("/edu/tcu/cs/tankwar/img/5.gif").toExternalForm()));
+        animationImages.add(new Image(getClass().getResource("/edu/tcu/cs/tankwar/img/6.gif").toExternalForm()));
+        animationImages.add(new Image(getClass().getResource("/edu/tcu/cs/tankwar/img/7.gif").toExternalForm()));
+        animationImages.add(new Image(getClass().getResource("/edu/tcu/cs/tankwar/img/8.gif").toExternalForm()));
+        animationImages.add(new Image(getClass().getResource("/edu/tcu/cs/tankwar/img/9.gif").toExternalForm()));
+        animationImages.add(new Image(getClass().getResource("/edu/tcu/cs/tankwar/img/10.gif").toExternalForm()));
 
         this.group = group;
         this.x = x;

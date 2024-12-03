@@ -12,10 +12,10 @@ public class Missile extends GameObject{
     int damage = 10;
 
     public Missile(Tank tank, double x, double y){
-        upImage = new Image("C:\\Users\\Ros\\Desktop\\Code\\tank-war\\src\\main\\resources\\edu\\tcu\\cs\\tankwar\\img\\missileU.gif");
-        downImage = new Image("C:\\Users\\Ros\\Desktop\\Code\\tank-war\\src\\main\\resources\\edu\\tcu\\cs\\tankwar\\img\\MissileD.gif");
-        leftImage = new Image("C:\\Users\\Ros\\Desktop\\Code\\tank-war\\src\\main\\resources\\edu\\tcu\\cs\\tankwar\\img\\missileL.gif");
-        rightImage = new Image("C:\\Users\\Ros\\Desktop\\Code\\tank-war\\src\\main\\resources\\edu\\tcu\\cs\\tankwar\\img\\missileR.gif");
+        upImage = new Image(getClass().getResource("/edu/tcu/cs/tankwar/img/missileU.gif").toExternalForm());
+        downImage = new Image(getClass().getResource("/edu/tcu/cs/tankwar/img/MissileD.gif").toExternalForm());
+        leftImage = new Image(getClass().getResource("/edu/tcu/cs/tankwar/img/missileL.gif").toExternalForm());
+        rightImage = new Image(getClass().getResource("/edu/tcu/cs/tankwar/img/missileR.gif").toExternalForm());
         this.tank = tank;
         imageView = new ImageView();
         setDirection(tank.getDirection());
