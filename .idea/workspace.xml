@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1887d57a-7359-4a17-8eee-6f14b563941d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/tankwar/TankWar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/tankwar/TankWar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/tankwar/classes/AITank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/tankwar/classes/AITank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/tankwar/classes/Missile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/tankwar/classes/Missile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/tankwar/classes/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/tankwar/classes/Tank.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,29 +41,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HelloApplication.executor": "Run",
-    "Application.TankWar.executor": "Run",
-    "JAR Application.TankWar-1.0-SNAPSHOT.jar.executor": "Run",
-    "JAR Application.original-TankWar-1.0-SNAPSHOT.jar.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Ros/Desktop/Code/tank-war/src/main/java/edu/tcu/cs/tankwar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propCompiler",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TankWar.executor&quot;: &quot;Run&quot;,
+    &quot;JAR Application.TankWar-1.0-SNAPSHOT.jar.executor&quot;: &quot;Run&quot;,
+    &quot;JAR Application.original-TankWar-1.0-SNAPSHOT.jar.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ros/Desktop/Code/tank-war/src/main/java/edu/tcu/cs/tankwar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Ros\Desktop\Code\tank-war\src\main\java\edu\tcu\cs\tankwar" />
@@ -72,7 +73,7 @@
       <recent name="C:\Users\Ros\Desktop\Code\tank-war\src\main\resources\edu\tcu\cs\tankwar\img" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.TankWar">
     <configuration name="TankWar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.tcu.cs.tankwar.TankWar" />
       <extension name="coverage">
@@ -138,7 +139,8 @@
       <workItem from="1733175357348" duration="568000" />
       <workItem from="1733175933993" duration="161000" />
       <workItem from="1733176103429" duration="2280000" />
-      <workItem from="1733183184010" duration="3813000" />
+      <workItem from="1733183184010" duration="4385000" />
+      <workItem from="1733192681584" duration="1839000" />
     </task>
     <servers />
   </component>

@@ -71,13 +71,6 @@ public class Tank extends GameObject{
         timer.start();
     }
 
-    private boolean isIntersectingWall(List<Wall> walls){
-        for(Wall wall : walls){
-            if (this.intersects(wall.getBoundsInParent())) return true;
-        }
-        return false;
-    }
-
     public void takeDamage(int damage, List<Tank> tanks){
         if(health > 0){
             this.health -= damage;

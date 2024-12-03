@@ -47,23 +47,6 @@ public class Missile extends GameObject{
         }
     }
 
-    private void setImage(){
-        System.out.println(direction);
-        switch(direction){
-            case "D":
-                image = downImage;
-                break;
-            case "L" :
-                image = leftImage;
-                break;
-            case "R":
-                image = rightImage;
-                break;
-            default:
-                image = upImage;
-        }
-    }
-
     public void moveMissile(){
         switch(this.direction){
             case "U" -> {

@@ -44,7 +44,7 @@ public class AITank extends Tank{
         if(canMove) doRandomMove(walls);
     }
 
-    public void doRandomMove(List<Wall> walls){
+    private void doRandomMove(List<Wall> walls){
         switch(direction){
             case "U" -> {
                 moveUp();
@@ -87,12 +87,12 @@ public class AITank extends Tank{
         moveCounter -= speed;
     }
 
-    public void shootPlayer(Tank playerTank, List<Wall> walls, List<Tank> tanks){
+    private void shootPlayer(Tank playerTank, List<Wall> walls, List<Tank> tanks){
         this.setDirection(getRelativePlayerLocation(playerTank));
         this.shoot(walls, tanks);
     }
 
-    public String getRelativePlayerLocation(Tank playerTank){
+    private String getRelativePlayerLocation(Tank playerTank){
         double dx = playerTank.getX() - this.getX();
         double dy = playerTank.getY() - this.getY();
 
